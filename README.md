@@ -1,5 +1,6 @@
 # Sheet
 A cloud based character sheet for the Pathfinder Roleplaying Game.
+Forked from [Mottokrosh/Sheet](https://github.com/Mottokrosh/Sheet)
 
 ## Development Requirements
 The instructions assume hosting on [Heroku](https://www.heroku.com/). Adjust as necessary for different hosting platforms.

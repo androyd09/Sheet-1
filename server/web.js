@@ -3,7 +3,7 @@ var logfmt = require('logfmt');
 var _ = require('underscore');
 var app = express();
 
-var mongoUri = process.env.MONGOLAB_PAID,
+var mongoUri = process.env.MONGOLAB_PAID || 'mongodb://localhost:27017/sheet',
 	port = Number(process.env.PORT || 5000),
 	host = process.env.HOST,
 	appFolder = process.env.APP_FOLDER,
@@ -12,6 +12,7 @@ var mongoUri = process.env.MONGOLAB_PAID,
 	GITHUB_CLIENT_ID = process.env.GITHUB_CLIENT_ID,
 	GITHUB_CLIENT_SECRET = process.env.GITHUB_CLIENT_SECRET;
 
+console.log(mongoUri);
 var db = require('monk')(mongoUri);
 
 // --- Passport ---
